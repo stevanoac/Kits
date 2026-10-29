@@ -1,0 +1,69 @@
+name: Archer
+displayName: "&aArcher"
+permission: "kit.archer"
+description: "Standard archer kit equipped with bow and arrows."
+
+icon:
+  material: BOW
+  name: "&aArcher's Bow"
+  enchants:
+    ARROW_DAMAGE: 1
+
+armor:
+  helmet:
+    material: LEATHER_HELMET
+    name: "&aArcher's Helmet"
+    color: "#2E8B57"
+    enchants:
+      PROTECTION_ENVIRONMENTAL: 1
+      DURABILITY: 3
+  chestplate:
+    material: LEATHER_CHESTPLATE
+    name: "&aArcher's Chestplate"
+    color: "#2E8B57"
+    enchants:
+      PROTECTION_ENVIRONMENTAL: 1
+      DURABILITY: 3
+  leggings:
+    material: LEATHER_LEGGINGS
+    name: "&aArcher's Leggings"
+    color: "#2E8B57"
+    enchants:
+      PROTECTION_ENVIRONMENTAL: 1
+      DURABILITY: 3
+  boots:
+    material: LEATHER_BOOTS
+    name: "&aArcher's Boots"
+    color: "#2E8B57"
+    enchants:
+      PROTECTION_ENVIRONMENTAL: 1
+      DURABILITY: 3
+
+contents:
+  0:
+    material: BOW
+    name: "&aArcher's Bow"
+    lore:
+      - "&7A masterfully crafted wooden bow."
+      - "&eDamage &7increased by enchantments."
+    enchants:
+      ARROW_DAMAGE: 2
+      ARROW_FIRE: 1
+      DURABILITY: 3
+  1:
+    material: STONE_SWORD
+    name: "&7Archer's Dagger"
+    enchants:
+      DAMAGE_ALL: 1
+      DURABILITY: 2
+  2:
+    material: COOKED_BEEF
+    amount: 16
+  8:
+    material: ARROW
+    amount: 64
+
+potionEffects:
+  - type: SPEED
+    duration: 1200
+    amplifier: 1

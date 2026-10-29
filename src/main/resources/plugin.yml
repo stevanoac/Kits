@@ -1,0 +1,6 @@
+name: Kits
+version: '${project.version}'
+main: dev.stevano.kits.Kits
+authors: [ stevanoac ]
+description: Simple Minecraft Kits plugin.
+website: https://stevanoac.dev/

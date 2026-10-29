@@ -1,0 +1,80 @@
+# ========================================================
+#                Kits GUI Configuration (menus.yml)
+# ========================================================
+
+kit-selector:
+  # Title displayed on the GUI window
+  title: "&8Kit Selector"
+
+  # Size of the menu (must be 9, 18, 27, 36, 45, or 54)
+  size: 36
+
+  # Fill remaining empty slots with filler item
+  fill-empty-slots: true
+  filler:
+    material: STAINED_GLASS_PANE
+    data: 7
+    name: " "
+
+  # Border frame around the inventory
+  border:
+    enabled: true
+    material: STAINED_GLASS_PANE
+    data: 15
+    name: " "
+
+  # Static buttons
+  items:
+    info:
+      slot: 4
+      material: NETHER_STAR
+      name: "&b&lKit Selection"
+      lore:
+        - "&7Select a kit to equip it."
+        - ""
+        - "&7Status Legend:"
+        - " &a✔ Available &7- Ready to equip"
+        - " &c✖ Locked &7- Missing permission"
+    close:
+      slot: 31
+      material: BARRIER
+      name: "&c&lClose Menu"
+      lore:
+        - "&7Click to close this menu."
+
+  # Kit buttons display formatting
+  kit-display:
+    available:
+      name: "&a&l{displayName}"
+      lore:
+        - "&7-------------------------"
+        - "&7Description:"
+        - " &f{description}"
+        - ""
+        - "&bKit Contents:"
+        - " &7* Items: &e{items_count}"
+        - " &7* Armor: &e{armor_count}"
+        - " &7* Effects: &e{effects_count}"
+        - ""
+        - "&a&l» Click to Equip «"
+        - "&7-------------------------"
+    locked:
+      name: "&c&l{displayName} &7(&cLocked&7)"
+      lore:
+        - "&7-------------------------"
+        - "&7Description:"
+        - " &f{description}"
+        - ""
+        - "&bKit Contents:"
+        - " &7* Items: &e{items_count}"
+        - " &7* Armor: &e{armor_count}"
+        - " &7* Effects: &e{effects_count}"
+        - ""
+        - "&c&l✖ Locked (No Permission)"
+        - "&7-------------------------"
+
+  # Explicit slot assignments for kits (optional).
+  # If a kit isn't listed here, it will automatically occupy the next available slot!
+  kit-slots:
+    archer: 10
+    default: 11
